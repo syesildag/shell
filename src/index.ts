@@ -1,6 +1,7 @@
 import { config, grep, ls, pwd, ShellString } from 'shelljs';
 
 import counter from './generator';
+import send, { testMailOptions, testSmtpTransportOptions } from './nodemailer';
 
 config.verbose = true;
 
@@ -12,7 +13,7 @@ let list = ls(`-A`);
 
 console.log(list.grep('tsconfig').stdout);
 
-let result = grep(`-l`, /config/gi, "index*");
+let result = grep(`-l`, /config/gi, "src/index*");
 
 result.stdout.split('\n').forEach(file => {
    if (file) {
@@ -30,3 +31,6 @@ while (!curr.done) {
    curr = iter.next(curr.value === 5);
 }
 console.log(curr.value.toUpperCase());
+
+send(testSmtpTransportOptions, testMailOptions)
+   .catch(console.error);
