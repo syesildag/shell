@@ -482,7 +482,7 @@
         "affectsGlobalScope": false
       },
       "./src/nodemailer.ts": {
-        "version": "2450d625b812cb89d1e2e4e01f53c852be37909daae725f164cc0d690f9ea93f",
+        "version": "2047617356c628ef78ebf744fa63645074b847c4d38366f6efc25fcb0cf5492c",
         "signature": "1f1449527f78e795ddd18127c12e84942732cab768869f83e1b65e221b2beef4",
         "affectsGlobalScope": false
       },
