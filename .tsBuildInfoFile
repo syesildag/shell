@@ -501,6 +501,176 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
+      "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts": {
+        "version": "07edbc791d336971a2cb817155c9de7bc6ed3d475b4d34bdb7ac507bdaf6a4f0",
+        "signature": "07edbc791d336971a2cb817155c9de7bc6ed3d475b4d34bdb7ac507bdaf6a4f0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/backoffs.d.ts": {
+        "version": "cdea607bc78c0109200bf1936decfbaf8b1954218d29a698707d5b0a4de5b0d2",
+        "signature": "cdea607bc78c0109200bf1936decfbaf8b1954218d29a698707d5b0a4de5b0d2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/advanced-options.d.ts": {
+        "version": "55be8b79ef80b586753522952eb163be17dbb0092529ddc6c303078f764bb47f",
+        "signature": "55be8b79ef80b586753522952eb163be17dbb0092529ddc6c303078f764bb47f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts": {
+        "version": "028379ddd873f8e736612326a79c8bba21b2fcf8fae60d660cee69e2646ae777",
+        "signature": "028379ddd873f8e736612326a79c8bba21b2fcf8fae60d660cee69e2646ae777",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts": {
+        "version": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
+        "signature": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/ioredis/index.d.ts": {
+        "version": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "signature": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/redis-options.d.ts": {
+        "version": "2fc0aeb727d727d59317c0547a57e46c00c80ae659045a0d9160edc15d84f321",
+        "signature": "2fc0aeb727d727d59317c0547a57e46c00c80ae659045a0d9160edc15d84f321",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/queue-options.d.ts": {
+        "version": "f45dabc0bc8ebdf4d794405ca362ecd9bdd127b12379c910388bc83adb7051f7",
+        "signature": "f45dabc0bc8ebdf4d794405ca362ecd9bdd127b12379c910388bc83adb7051f7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts": {
+        "version": "67352505602767176f5107788c6093799e62fb37672ebb1fc5eeb518defbded7",
+        "signature": "67352505602767176f5107788c6093799e62fb37672ebb1fc5eeb518defbded7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/rate-limiter-options.d.ts": {
+        "version": "e5b268276908c0b1cfeab341df2cae7fbff38d5fb17a74b8100cbcfcd0a0485a",
+        "signature": "e5b268276908c0b1cfeab341df2cae7fbff38d5fb17a74b8100cbcfcd0a0485a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts": {
+        "version": "273d69369cfb46a1908ff09c224d3eee1559293f69c9fef9fd593ecc6d09f362",
+        "signature": "273d69369cfb46a1908ff09c224d3eee1559293f69c9fef9fd593ecc6d09f362",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts": {
+        "version": "b47c128b0d8413a3d2ddcf8cd5670fdefc26d86ba2e9b9df0c8fcbe42b87cb58",
+        "signature": "b47c128b0d8413a3d2ddcf8cd5670fdefc26d86ba2e9b9df0c8fcbe42b87cb58",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/worker-options.d.ts": {
+        "version": "d2a3944ecad56a9b130384d288ae16c297d568c839949ba034d13ee695a4f4ae",
+        "signature": "d2a3944ecad56a9b130384d288ae16c297d568c839949ba034d13ee695a4f4ae",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/interfaces/index.d.ts": {
+        "version": "2eec5ef8fe86752532362f867332c677c6d7a920c6f5501f7af733d8bd3995c7",
+        "signature": "2eec5ef8fe86752532362f867332c677c6d7a920c6f5501f7af733d8bd3995c7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/job.d.ts": {
+        "version": "d9d1030dbba98d8a39125a453dccf99a655ac9b4ed181d11584b7f079f6eb62f",
+        "signature": "d9d1030dbba98d8a39125a453dccf99a655ac9b4ed181d11584b7f079f6eb62f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/redis-connection.d.ts": {
+        "version": "c8c18b4d0c550cc8fff5d7c9b902f38d6ddd5b233584dbc46f5a4a011985a195",
+        "signature": "c8c18b4d0c550cc8fff5d7c9b902f38d6ddd5b233584dbc46f5a4a011985a195",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/queue-base.d.ts": {
+        "version": "8b64f532376d4067ac5a815d33b44c14f97ccc5cb621e3d86d305f8ca1baff7f",
+        "signature": "8b64f532376d4067ac5a815d33b44c14f97ccc5cb621e3d86d305f8ca1baff7f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/queue-events.d.ts": {
+        "version": "a054dda3882496a208a877d7b0bb279335b94018cba7a3690b3fd9684dc174c5",
+        "signature": "a054dda3882496a208a877d7b0bb279335b94018cba7a3690b3fd9684dc174c5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/queue-getters.d.ts": {
+        "version": "d177cea7564e074c2e2e5887b5effc2f6d4f6df584abb82e1e8b04156569d68d",
+        "signature": "d177cea7564e074c2e2e5887b5effc2f6d4f6df584abb82e1e8b04156569d68d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts": {
+        "version": "155774ab33e396fb8568ce995f10d7e066c614a87626ab1bc799353fbef7783c",
+        "signature": "155774ab33e396fb8568ce995f10d7e066c614a87626ab1bc799353fbef7783c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/queue.d.ts": {
+        "version": "ad24c09142cd5d5909723a26ac4dc7f4890759b6699e2ee6348ca913c24908b8",
+        "signature": "ad24c09142cd5d5909723a26ac4dc7f4890759b6699e2ee6348ca913c24908b8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/repeat.d.ts": {
+        "version": "9ae8c60401553bc0cd25e9a59022928f7bc1af668ba3054b8301136f1d66908d",
+        "signature": "9ae8c60401553bc0cd25e9a59022928f7bc1af668ba3054b8301136f1d66908d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/scripts.d.ts": {
+        "version": "3ca7129afbd2d674e2e0e9b3d8b079494a7e56a40528d11b5be620331e1c2bc8",
+        "signature": "3ca7129afbd2d674e2e0e9b3d8b079494a7e56a40528d11b5be620331e1c2bc8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/worker.d.ts": {
+        "version": "bfe39ddb4f47f33ce5d0f8e0b706b20bfa9b48d220e4bef09596aa8346fd8da1",
+        "signature": "bfe39ddb4f47f33ce5d0f8e0b706b20bfa9b48d220e4bef09596aa8346fd8da1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/child-pool.d.ts": {
+        "version": "18323f416f12e8e8ff2244cdb87e5cbcdc6d1e83a7e18e02efa6d0cabfae4ef7",
+        "signature": "18323f416f12e8e8ff2244cdb87e5cbcdc6d1e83a7e18e02efa6d0cabfae4ef7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/sandbox.d.ts": {
+        "version": "a0cf6fac4add9301326551a083801552567b9ca8daf5dc04965d30cb3ac2f1cf",
+        "signature": "a0cf6fac4add9301326551a083801552567b9ca8daf5dc04965d30cb3ac2f1cf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/classes/index.d.ts": {
+        "version": "041d2afebccd7c1ff46e340dc985d5f72473c8c4e4e77fa2fdfee957b1244225",
+        "signature": "041d2afebccd7c1ff46e340dc985d5f72473c8c4e4e77fa2fdfee957b1244225",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/commands/index.d.ts": {
+        "version": "df0671740d1b2c329edf28a1b46f9a212f15ff282a0e9439adf76c4eab5afb33",
+        "signature": "df0671740d1b2c329edf28a1b46f9a212f15ff282a0e9439adf76c4eab5afb33",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/enums/retry-errors.enum.d.ts": {
+        "version": "b23d5918ee76ad99045d4753463b7cf47d6016f423ba0cfde1ccfd180768ac60",
+        "signature": "b23d5918ee76ad99045d4753463b7cf47d6016f423ba0cfde1ccfd180768ac60",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/enums/index.d.ts": {
+        "version": "82c7d399be8af62cc33a18765e31877375eee7a6be1798804e1c2fbc7f81b5cf",
+        "signature": "82c7d399be8af62cc33a18765e31877375eee7a6be1798804e1c2fbc7f81b5cf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/bullmq/dist/index.d.ts": {
+        "version": "6e0b5efcf919fca6599a01eb279d2d3af1e4362ffeeef9083a4d1856de90ebe3",
+        "signature": "6e0b5efcf919fca6599a01eb279d2d3af1e4362ffeeef9083a4d1856de90ebe3",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/events.ts": {
+        "version": "09eec4059d200a9ddf2f0df253b6dee6a938064d1e94b0d1018351a53fb6ebef",
+        "signature": "673b3553bb680710ba5308b6e2ddfe8c307f83932b0c9deb88aa620d368dcfd7",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/jobs.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/queue.ts": {
+        "version": "a84c42163d4159cb7770395354ec2dc67229ac6ebaf88ec460bc68e91a083580",
+        "signature": "f78eb5ead3798a468d305b5559e6e8bfb93d68168e1d88976b7a6d75e7537112",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@babel/types/lib/index.d.ts": {
         "version": "b668b7fb7c52a05fb9233a27ba5099a73cd8e157b037d67399336635495ab483",
         "signature": "b668b7fb7c52a05fb9233a27ba5099a73cd8e157b037d67399336635495ab483",
@@ -529,16 +699,6 @@
       "./node_modules/@types/babel__core/index.d.ts": {
         "version": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
         "signature": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/ioredis/index.d.ts": {
-        "version": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
-        "signature": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/bull/index.d.ts": {
-        "version": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
-        "signature": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/graceful-fs/index.d.ts": {
@@ -667,10 +827,6 @@
       "./node_modules/@types/babel__traverse/index.d.ts": [
         "./node_modules/@babel/types/lib/index.d.ts"
       ],
-      "./node_modules/@types/bull/index.d.ts": [
-        "./node_modules/@types/ioredis/index.d.ts",
-        "./node_modules/@types/node/events.d.ts"
-      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
@@ -1051,6 +1207,130 @@
       ],
       "./node_modules/@types/yargs/index.d.ts": [
         "./node_modules/@types/yargs-parser/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/backoffs.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/child-pool.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/index.d.ts": [
+        "./node_modules/bullmq/dist/classes/backoffs.d.ts",
+        "./node_modules/bullmq/dist/classes/child-pool.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-events.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-getters.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts",
+        "./node_modules/bullmq/dist/classes/queue.d.ts",
+        "./node_modules/bullmq/dist/classes/redis-connection.d.ts",
+        "./node_modules/bullmq/dist/classes/repeat.d.ts",
+        "./node_modules/bullmq/dist/classes/sandbox.d.ts",
+        "./node_modules/bullmq/dist/classes/scripts.d.ts",
+        "./node_modules/bullmq/dist/classes/worker.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/job.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-base.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/bullmq/dist/classes/redis-connection.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-events.d.ts": [
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-getters.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/redis-connection.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/repeat.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/sandbox.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/scripts.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/worker.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/commands/index.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/enums/index.d.ts": [
+        "./node_modules/bullmq/dist/enums/retry-errors.enum.d.ts"
+      ],
+      "./node_modules/bullmq/dist/index.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/commands/index.d.ts",
+        "./node_modules/bullmq/dist/enums/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/index.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/advanced-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/queue-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/rate-limiter-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/redis-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts",
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/worker-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/queue-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/redis-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/redis-options.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/worker-options.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
       ],
       "./node_modules/jest-diff/build/diffLines.d.ts": [
         "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
@@ -1082,6 +1362,12 @@
         "./node_modules/@types/nodemailer/lib/mailer/index.d.ts",
         "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts",
         "./src/config.ts"
+      ],
+      "./src/tasks/events.ts": [
+        "./node_modules/bullmq/dist/index.d.ts"
+      ],
+      "./src/tasks/queue.ts": [
+        "./node_modules/bullmq/dist/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1104,10 +1390,6 @@
       ],
       "./node_modules/@types/babel__traverse/index.d.ts": [
         "./node_modules/@babel/types/lib/index.d.ts"
-      ],
-      "./node_modules/@types/bull/index.d.ts": [
-        "./node_modules/@types/ioredis/index.d.ts",
-        "./node_modules/@types/node/events.d.ts"
       ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
@@ -1490,6 +1772,130 @@
       "./node_modules/@types/yargs/index.d.ts": [
         "./node_modules/@types/yargs-parser/index.d.ts"
       ],
+      "./node_modules/bullmq/dist/classes/backoffs.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/child-pool.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/index.d.ts": [
+        "./node_modules/bullmq/dist/classes/backoffs.d.ts",
+        "./node_modules/bullmq/dist/classes/child-pool.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-events.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-getters.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts",
+        "./node_modules/bullmq/dist/classes/queue.d.ts",
+        "./node_modules/bullmq/dist/classes/redis-connection.d.ts",
+        "./node_modules/bullmq/dist/classes/repeat.d.ts",
+        "./node_modules/bullmq/dist/classes/sandbox.d.ts",
+        "./node_modules/bullmq/dist/classes/scripts.d.ts",
+        "./node_modules/bullmq/dist/classes/worker.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/job.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-base.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/bullmq/dist/classes/redis-connection.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-events.d.ts": [
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-getters.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/classes/queue-base.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/queue.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/redis-connection.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/repeat.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/sandbox.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/scripts.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/classes/worker.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/commands/index.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/enums/index.d.ts": [
+        "./node_modules/bullmq/dist/enums/retry-errors.enum.d.ts"
+      ],
+      "./node_modules/bullmq/dist/index.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/commands/index.d.ts",
+        "./node_modules/bullmq/dist/enums/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/index.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/advanced-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/queue-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/rate-limiter-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/redis-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts",
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/worker-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts",
+        "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/queue-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/redis-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/redis-options.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts": [
+        "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts": [
+        "./node_modules/bullmq/dist/classes/job.d.ts",
+        "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts"
+      ],
+      "./node_modules/bullmq/dist/interfaces/worker-options.d.ts": [
+        "./node_modules/bullmq/dist/classes/index.d.ts",
+        "./node_modules/bullmq/dist/interfaces/index.d.ts"
+      ],
       "./node_modules/jest-diff/build/diffLines.d.ts": [
         "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "./node_modules/jest-diff/build/types.d.ts"
@@ -1511,6 +1917,12 @@
         "./node_modules/@types/nodemailer/index.d.ts",
         "./node_modules/@types/nodemailer/lib/mailer/index.d.ts",
         "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts"
+      ],
+      "./src/tasks/events.ts": [
+        "./node_modules/bullmq/dist/index.d.ts"
+      ],
+      "./src/tasks/queue.ts": [
+        "./node_modules/bullmq/dist/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1520,7 +1932,6 @@
       "./node_modules/@types/babel__generator/index.d.ts",
       "./node_modules/@types/babel__template/index.d.ts",
       "./node_modules/@types/babel__traverse/index.d.ts",
-      "./node_modules/@types/bull/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
       "./node_modules/@types/graceful-fs/index.d.ts",
       "./node_modules/@types/ioredis/index.d.ts",
@@ -1595,6 +2006,36 @@
       "./node_modules/@types/stack-utils/index.d.ts",
       "./node_modules/@types/yargs-parser/index.d.ts",
       "./node_modules/@types/yargs/index.d.ts",
+      "./node_modules/bullmq/dist/classes/backoffs.d.ts",
+      "./node_modules/bullmq/dist/classes/child-pool.d.ts",
+      "./node_modules/bullmq/dist/classes/index.d.ts",
+      "./node_modules/bullmq/dist/classes/job.d.ts",
+      "./node_modules/bullmq/dist/classes/queue-base.d.ts",
+      "./node_modules/bullmq/dist/classes/queue-events.d.ts",
+      "./node_modules/bullmq/dist/classes/queue-getters.d.ts",
+      "./node_modules/bullmq/dist/classes/queue-scheduler.d.ts",
+      "./node_modules/bullmq/dist/classes/queue.d.ts",
+      "./node_modules/bullmq/dist/classes/redis-connection.d.ts",
+      "./node_modules/bullmq/dist/classes/repeat.d.ts",
+      "./node_modules/bullmq/dist/classes/sandbox.d.ts",
+      "./node_modules/bullmq/dist/classes/scripts.d.ts",
+      "./node_modules/bullmq/dist/classes/worker.d.ts",
+      "./node_modules/bullmq/dist/commands/index.d.ts",
+      "./node_modules/bullmq/dist/enums/index.d.ts",
+      "./node_modules/bullmq/dist/enums/retry-errors.enum.d.ts",
+      "./node_modules/bullmq/dist/index.d.ts",
+      "./node_modules/bullmq/dist/interfaces/advanced-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/index.d.ts",
+      "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/queue-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/queue-scheduler-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/rate-limiter-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/redis-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/repeat-options.d.ts",
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job-processor.d.ts",
+      "./node_modules/bullmq/dist/interfaces/sandboxed-job.d.ts",
+      "./node_modules/bullmq/dist/interfaces/worker-options.d.ts",
       "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
       "./node_modules/jest-diff/build/diffLines.d.ts",
       "./node_modules/jest-diff/build/index.d.ts",
@@ -1638,7 +2079,10 @@
       "./src/generator.test.ts",
       "./src/generator.ts",
       "./src/index.ts",
-      "./src/nodemailer.ts"
+      "./src/nodemailer.ts",
+      "./src/tasks/events.ts",
+      "./src/tasks/jobs.ts",
+      "./src/tasks/queue.ts"
     ]
   },
   "version": "4.2.3"
