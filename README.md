@@ -1,1 +1,2 @@
-# shelljs
+# shell
+bullmq, nodemailer, shelljs etc.
