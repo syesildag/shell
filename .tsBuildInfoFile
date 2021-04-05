@@ -487,13 +487,108 @@
         "affectsGlobalScope": false
       },
       "./src/nodemailer.ts": {
-        "version": "7238e481ac2699a43357d8488002970ef779a6be76c9650cdef287ada8223246",
-        "signature": "6d62e24758ee7e605c37048f4e4eceb874adb4e983003e67b9579dadf128d301",
+        "version": "44e1c039d88312e31dd8549c5466ea30af99ffb4701f5936632693d2b97e50ed",
+        "signature": "5983b57b5e08d99a77a89a19d33d884c7f7a2cab82c49016b6a06dd4a40bf86c",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "9d1b9db6ef88260adcd2e27f1c7d5be3dd68cc48e125b1a3bb1a7c42a693a554",
+        "version": "74b3936584660df0e4c81bf8ca3fa4abc202066c9311c71825d2fc66791f550b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "signature": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/Global.d.ts": {
+        "version": "9fbfee041c92b843920dbdea5377e4898720323bf8f721b8c059b7dda8ea23b2",
+        "signature": "9fbfee041c92b843920dbdea5377e4898720323bf8f721b8c059b7dda8ea23b2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/Circus.d.ts": {
+        "version": "d6cdc8d2ec9611272c9c36777990800e4acf908883af1adb052de3ca6660a076",
+        "signature": "d6cdc8d2ec9611272c9c36777990800e4acf908883af1adb052de3ca6660a076",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/node_modules/chalk/index.d.ts": {
+        "version": "0d14fa22c41fdc7277e6f71473b20ebc07f40f00e38875142335d5b63cdfc9d2",
+        "signature": "0d14fa22c41fdc7277e6f71473b20ebc07f40f00e38875142335d5b63cdfc9d2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "signature": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "905c3e8f7ddaa6c391b60c05b2f4c3931d7127ad717a080359db3df510b7bdab",
+        "signature": "905c3e8f7ddaa6c391b60c05b2f4c3931d7127ad717a080359db3df510b7bdab",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/yargs-parser/index.d.ts": {
+        "version": "3bdd93ec24853e61bfa4c63ebaa425ff3e474156e87a47d90122e1d8cc717c1f",
+        "signature": "3bdd93ec24853e61bfa4c63ebaa425ff3e474156e87a47d90122e1d8cc717c1f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/yargs/index.d.ts": {
+        "version": "5a2a25feca554a8f289ed62114771b8c63d89f2b58325e2f8b7043e4e0160d11",
+        "signature": "5a2a25feca554a8f289ed62114771b8c63d89f2b58325e2f8b7043e4e0160d11",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/Config.d.ts": {
+        "version": "6e5bbd05958225631788d68c613088aa88313c62840c36f96ead45564a651acb",
+        "signature": "6e5bbd05958225631788d68c613088aa88313c62840c36f96ead45564a651acb",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/TestResult.d.ts": {
+        "version": "ef62b4aa372f77458d84c26614b44129f929e263c81b5cd1034f5828a5530412",
+        "signature": "ef62b4aa372f77458d84c26614b44129f929e263c81b5cd1034f5828a5530412",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/Transform.d.ts": {
+        "version": "4be75f5a584748db901246e3419b2e9348e27bae34fd13dd02be0e999fd5f83b",
+        "signature": "4be75f5a584748db901246e3419b2e9348e27bae34fd13dd02be0e999fd5f83b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@jest/types/build/index.d.ts": {
+        "version": "0b0feb9837c561c0a67b61024328045bb16bac6e4b10f7b0b217d3b8b43b0b12",
+        "signature": "0b0feb9837c561c0a67b61024328045bb16bac6e4b10f7b0b217d3b8b43b0b12",
+        "affectsGlobalScope": false
+      },
+      "./src/jest.config.ts": {
+        "version": "2b48785a75bafa6bbebef9220e03e545e6812bc1d0d0dbedca0479f4117a3839",
+        "signature": "cab81e0615b326534dcd6be7441dc7586005e55d078e7b29fc592e5a797c4122",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/types/lib/index.d.ts": {
+        "version": "b668b7fb7c52a05fb9233a27ba5099a73cd8e157b037d67399336635495ab483",
+        "signature": "b668b7fb7c52a05fb9233a27ba5099a73cd8e157b037d67399336635495ab483",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "signature": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__template/index.d.ts": {
+        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
+        "signature": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__core/index.d.ts": {
+        "version": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
+        "signature": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/ioredis/index.d.ts": {
@@ -504,6 +599,66 @@
       "./node_modules/@types/bull/index.d.ts": {
         "version": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
         "signature": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/graceful-fs/index.d.ts": {
+        "version": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
+        "signature": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/cleanupSemantic.d.ts": {
+        "version": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "signature": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/types.d.ts": {
+        "version": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "signature": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/diffLines.d.ts": {
+        "version": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "signature": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/printDiffs.d.ts": {
+        "version": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "signature": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/index.d.ts": {
+        "version": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "signature": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/types.d.ts": {
+        "version": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "signature": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/index.d.ts": {
+        "version": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/jest/index.d.ts": {
+        "version": "ce2169125f42515a26fa60977b6d56ae407f3462e28832fbf6a9013f6a828bab",
+        "signature": "ce2169125f42515a26fa60977b6d56ae407f3462e28832fbf6a9013f6a828bab",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/normalize-package-data/index.d.ts": {
+        "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
+        "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/prettier/index.d.ts": {
+        "version": "08b428a44bc98005536a12456518797e9afe2a08e8b5d9785641713a54475881",
+        "signature": "08b428a44bc98005536a12456518797e9afe2a08e8b5d9785641713a54475881",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/stack-utils/index.d.ts": {
+        "version": "c6c4fea9acc55d5e38ff2b70d57ab0b5cdbd08f8bc5d7a226e322cea128c5b57",
+        "signature": "c6c4fea9acc55d5e38ff2b70d57ab0b5cdbd08f8bc5d7a226e322cea128c5b57",
         "affectsGlobalScope": false
       }
     },
@@ -527,6 +682,47 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Circus.d.ts": [
+        "./node_modules/@jest/types/build/Global.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Config.d.ts": [
+        "./node_modules/@jest/types/node_modules/chalk/index.d.ts",
+        "./node_modules/@types/istanbul-reports/index.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/yargs/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Global.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/index.d.ts": [
+        "./node_modules/@jest/types/build/Circus.d.ts",
+        "./node_modules/@jest/types/build/Config.d.ts",
+        "./node_modules/@jest/types/build/Global.d.ts",
+        "./node_modules/@jest/types/build/TestResult.d.ts",
+        "./node_modules/@jest/types/build/Transform.d.ts"
+      ],
+      "./node_modules/@types/babel__core/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__generator/index.d.ts",
+        "./node_modules/@types/babel__template/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./node_modules/@types/babel__generator/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__template/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__traverse/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
       "./node_modules/@types/bull/index.d.ts": [
         "./node_modules/@types/ioredis/index.d.ts",
         "./node_modules/@types/node/events.d.ts"
@@ -536,11 +732,25 @@
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/graceful-fs/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
       "./node_modules/@types/ioredis/index.d.ts": [
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts",
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/tls.d.ts"
+      ],
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/istanbul-reports/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-report/index.d.ts"
+      ],
+      "./node_modules/@types/jest/index.d.ts": [
+        "./node_modules/jest-diff/build/index.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
       ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
@@ -895,10 +1105,33 @@
         "./node_modules/@types/node/child_process.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/yargs/index.d.ts": [
+        "./node_modules/@types/yargs-parser/index.d.ts"
+      ],
+      "./node_modules/jest-diff/build/diffLines.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/index.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/diffLines.d.ts",
+        "./node_modules/jest-diff/build/printDiffs.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/printDiffs.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/pretty-format/build/index.d.ts": [
+        "./node_modules/pretty-format/build/types.d.ts"
+      ],
       "./src/index.ts": [
         "./node_modules/@types/shelljs/index.d.ts",
         "./src/generator.ts",
         "./src/nodemailer.ts"
+      ],
+      "./src/jest.config.ts": [
+        "./node_modules/@jest/types/build/index.d.ts"
       ],
       "./src/nodemailer.ts": [
         "./node_modules/@types/nodemailer/index.d.ts",
@@ -908,6 +1141,47 @@
       ]
     },
     "exportedModulesMap": {
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Circus.d.ts": [
+        "./node_modules/@jest/types/build/Global.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Config.d.ts": [
+        "./node_modules/@jest/types/node_modules/chalk/index.d.ts",
+        "./node_modules/@types/istanbul-reports/index.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/yargs/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/Global.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@jest/types/build/index.d.ts": [
+        "./node_modules/@jest/types/build/Circus.d.ts",
+        "./node_modules/@jest/types/build/Config.d.ts",
+        "./node_modules/@jest/types/build/Global.d.ts",
+        "./node_modules/@jest/types/build/TestResult.d.ts",
+        "./node_modules/@jest/types/build/Transform.d.ts"
+      ],
+      "./node_modules/@types/babel__core/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__generator/index.d.ts",
+        "./node_modules/@types/babel__template/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./node_modules/@types/babel__generator/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__template/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__traverse/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
       "./node_modules/@types/bull/index.d.ts": [
         "./node_modules/@types/ioredis/index.d.ts",
         "./node_modules/@types/node/events.d.ts"
@@ -917,11 +1191,25 @@
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/graceful-fs/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
       "./node_modules/@types/ioredis/index.d.ts": [
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts",
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/tls.d.ts"
+      ],
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/istanbul-reports/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-report/index.d.ts"
+      ],
+      "./node_modules/@types/jest/index.d.ts": [
+        "./node_modules/jest-diff/build/index.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
       ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
@@ -1276,6 +1564,29 @@
         "./node_modules/@types/node/child_process.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/yargs/index.d.ts": [
+        "./node_modules/@types/yargs-parser/index.d.ts"
+      ],
+      "./node_modules/jest-diff/build/diffLines.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/index.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/diffLines.d.ts",
+        "./node_modules/jest-diff/build/printDiffs.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/printDiffs.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/pretty-format/build/index.d.ts": [
+        "./node_modules/pretty-format/build/types.d.ts"
+      ],
+      "./src/jest.config.ts": [
+        "./node_modules/@jest/types/build/index.d.ts"
+      ],
       "./src/nodemailer.ts": [
         "./node_modules/@types/nodemailer/index.d.ts",
         "./node_modules/@types/nodemailer/lib/mailer/index.d.ts",
@@ -1283,9 +1594,27 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "./node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@jest/types/build/Circus.d.ts",
+      "./node_modules/@jest/types/build/Config.d.ts",
+      "./node_modules/@jest/types/build/Global.d.ts",
+      "./node_modules/@jest/types/build/TestResult.d.ts",
+      "./node_modules/@jest/types/build/Transform.d.ts",
+      "./node_modules/@jest/types/build/index.d.ts",
+      "./node_modules/@jest/types/node_modules/chalk/index.d.ts",
+      "./node_modules/@types/babel__core/index.d.ts",
+      "./node_modules/@types/babel__generator/index.d.ts",
+      "./node_modules/@types/babel__template/index.d.ts",
+      "./node_modules/@types/babel__traverse/index.d.ts",
       "./node_modules/@types/bull/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
+      "./node_modules/@types/graceful-fs/index.d.ts",
       "./node_modules/@types/ioredis/index.d.ts",
+      "./node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "./node_modules/@types/istanbul-lib-report/index.d.ts",
+      "./node_modules/@types/istanbul-reports/index.d.ts",
+      "./node_modules/@types/jest/index.d.ts",
       "./node_modules/@types/minimatch/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
@@ -1347,7 +1676,19 @@
       "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts",
       "./node_modules/@types/nodemailer/lib/stream-transport.d.ts",
       "./node_modules/@types/nodemailer/lib/xoauth2.d.ts",
+      "./node_modules/@types/normalize-package-data/index.d.ts",
+      "./node_modules/@types/prettier/index.d.ts",
       "./node_modules/@types/shelljs/index.d.ts",
+      "./node_modules/@types/stack-utils/index.d.ts",
+      "./node_modules/@types/yargs-parser/index.d.ts",
+      "./node_modules/@types/yargs/index.d.ts",
+      "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+      "./node_modules/jest-diff/build/diffLines.d.ts",
+      "./node_modules/jest-diff/build/index.d.ts",
+      "./node_modules/jest-diff/build/printDiffs.d.ts",
+      "./node_modules/jest-diff/build/types.d.ts",
+      "./node_modules/pretty-format/build/index.d.ts",
+      "./node_modules/pretty-format/build/types.d.ts",
       "./node_modules/typescript/lib/lib.dom.d.ts",
       "./node_modules/typescript/lib/lib.dom.iterable.d.ts",
       "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -1383,6 +1724,7 @@
       "./src/config.ts",
       "./src/generator.ts",
       "./src/index.ts",
+      "./src/jest.config.ts",
       "./src/nodemailer.ts"
     ]
   },
