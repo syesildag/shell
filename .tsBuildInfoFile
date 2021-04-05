@@ -171,6 +171,11 @@
         "signature": "e3cdbf38461ba69c6475809f783f2eb12e908c7ce51a6314f17803249efd64ff",
         "affectsGlobalScope": false
       },
+      "./src/generator.test.ts": {
+        "version": "0f6eb49443ecf4858d5449ce439f81c63787fd8a980a415e9c1fb7affb91a5bd",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/node/globals.d.ts": {
         "version": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
         "signature": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
@@ -557,7 +562,7 @@
         "affectsGlobalScope": false
       },
       "./src/jest.config.ts": {
-        "version": "2b48785a75bafa6bbebef9220e03e545e6812bc1d0d0dbedca0479f4117a3839",
+        "version": "38964ce8d8e615dada763d8ca8ed789495dd3bfd5350b9aba71dadff2b8dbe81",
         "signature": "cab81e0615b326534dcd6be7441dc7586005e55d078e7b29fc592e5a797c4122",
         "affectsGlobalScope": false
       },
@@ -1124,6 +1129,9 @@
       ],
       "./node_modules/pretty-format/build/index.d.ts": [
         "./node_modules/pretty-format/build/types.d.ts"
+      ],
+      "./src/generator.test.ts": [
+        "./src/generator.ts"
       ],
       "./src/index.ts": [
         "./node_modules/@types/shelljs/index.d.ts",
@@ -1722,6 +1730,7 @@
       "./node_modules/typescript/lib/lib.scripthost.d.ts",
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "./src/config.ts",
+      "./src/generator.test.ts",
       "./src/generator.ts",
       "./src/index.ts",
       "./src/jest.config.ts",
