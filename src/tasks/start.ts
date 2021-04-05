@@ -1,5 +1,6 @@
+import deleteKeysByPattern from './empty';
 import initEvents, { queueEvents } from './events';
-import initQueue, { queue, queueScheduler } from './queue';
+import initQueue, { name, queue, queueScheduler } from './queue';
 
 initEvents();
 initQueue();
@@ -15,5 +16,8 @@ process.once('SIGINT', async (signal: string) => {
    console.log(`closing queue...`);
    await queue.close();
    console.log(`closed queue.`);
+   console.log(`deleting redis keys...`);
+   await deleteKeysByPattern(`bull:${name}:*`);
+   console.log(`done.`);
    process.exit(0);
 });

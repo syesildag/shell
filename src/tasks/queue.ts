@@ -1,11 +1,13 @@
 import { Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
 
+import { Config } from '../config';
+
 export const name = "Queue";
 
 export const queueBaseOptions: QueueBaseOptions = {
    connection: {
-      host: "localhost",
-      port: 6379
+      host: Config.redis_host,
+      port: Config.redis_port
    }
 }
 

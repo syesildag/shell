@@ -162,8 +162,8 @@
         "affectsGlobalScope": false
       },
       "./src/config.ts": {
-        "version": "c3896a59650d5442b88f8ac11e7ebd30aacca16eb25c11b030d4ce3e0687ee63",
-        "signature": "d531e319ea8ed82878f07c348250c995048a5040aa1a574a9764240573bf84b5",
+        "version": "d48e5389d5ed8ac039308215db7c9b23a1745bb9c97a90bbc27f943d18a0121d",
+        "signature": "60dfb42b38a06016230bd7c5943d3589546616ba678131923014131305e9825e",
         "affectsGlobalScope": false
       },
       "./src/generator.ts": {
@@ -501,6 +501,16 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/ioredis/index.d.ts": {
+        "version": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "signature": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/empty.ts": {
+        "version": "52056f7b5de3262aafc200a42056ddef5c9a584ed552fc28032c8085e6c50881",
+        "signature": "760832ae869a48235c737c03167534186b216bc7a8ebc1788ba2f29aded8b899",
+        "affectsGlobalScope": false
+      },
       "./node_modules/bullmq/dist/interfaces/backoff-options.d.ts": {
         "version": "07edbc791d336971a2cb817155c9de7bc6ed3d475b4d34bdb7ac507bdaf6a4f0",
         "signature": "07edbc791d336971a2cb817155c9de7bc6ed3d475b4d34bdb7ac507bdaf6a4f0",
@@ -524,11 +534,6 @@
       "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts": {
         "version": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
         "signature": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/ioredis/index.d.ts": {
-        "version": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
-        "signature": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
         "affectsGlobalScope": false
       },
       "./node_modules/bullmq/dist/interfaces/redis-options.d.ts": {
@@ -657,7 +662,7 @@
         "affectsGlobalScope": false
       },
       "./src/tasks/queue.ts": {
-        "version": "df8b70e626428c0fe9816518f14488c8799f6d4f012e8c34be704ab2a0281790",
+        "version": "f2adce01de87f39375bb50a4c0dac7ed0ca129578f3af248cfb3363dad18b3f7",
         "signature": "f78eb5ead3798a468d305b5559e6e8bfb93d68168e1d88976b7a6d75e7537112",
         "affectsGlobalScope": false
       },
@@ -667,7 +672,7 @@
         "affectsGlobalScope": false
       },
       "./src/tasks/start.ts": {
-        "version": "81ae638380f53118420fb714230d9f748238f97be8a6b6e82d27286bb79c4d63",
+        "version": "7694bf36e0b837fbb0af48047791de20f865c4a4ef506964ec33daeb36f26131",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -1363,14 +1368,20 @@
         "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts",
         "./src/config.ts"
       ],
+      "./src/tasks/empty.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./src/config.ts"
+      ],
       "./src/tasks/events.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
-        "./node_modules/bullmq/dist/index.d.ts"
+        "./node_modules/bullmq/dist/index.d.ts",
+        "./src/config.ts"
       ],
       "./src/tasks/start.ts": [
+        "./src/tasks/empty.ts",
         "./src/tasks/events.ts",
         "./src/tasks/queue.ts"
       ]
@@ -2085,6 +2096,7 @@
       "./src/generator.ts",
       "./src/index.ts",
       "./src/nodemailer.ts",
+      "./src/tasks/empty.ts",
       "./src/tasks/events.ts",
       "./src/tasks/queue.ts",
       "./src/tasks/start.ts"
