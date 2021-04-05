@@ -1,4 +1,4 @@
-import { Queue, QueueBaseOptions, QueueScheduler } from 'bullmq';
+import { Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
 
 export const name = "Queue";
 
@@ -19,8 +19,13 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    queue = new Queue(name, opts);
 
+   queue.add("test", { "message": 123456 }, {
+      repeat: {
+         every: 10000
+      }
+   });
 
-
-
-   queue.add
+   new Worker(name, async job => {
+      console.log(`job : ${JSON.stringify(job)}\n`);
+   });
 }

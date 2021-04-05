@@ -656,19 +656,19 @@
         "signature": "6e0b5efcf919fca6599a01eb279d2d3af1e4362ffeeef9083a4d1856de90ebe3",
         "affectsGlobalScope": false
       },
-      "./src/tasks/events.ts": {
-        "version": "09eec4059d200a9ddf2f0df253b6dee6a938064d1e94b0d1018351a53fb6ebef",
-        "signature": "673b3553bb680710ba5308b6e2ddfe8c307f83932b0c9deb88aa620d368dcfd7",
-        "affectsGlobalScope": false
-      },
-      "./src/tasks/jobs.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": false
-      },
       "./src/tasks/queue.ts": {
-        "version": "a84c42163d4159cb7770395354ec2dc67229ac6ebaf88ec460bc68e91a083580",
+        "version": "df8b70e626428c0fe9816518f14488c8799f6d4f012e8c34be704ab2a0281790",
         "signature": "f78eb5ead3798a468d305b5559e6e8bfb93d68168e1d88976b7a6d75e7537112",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/events.ts": {
+        "version": "ebe392e75b7ffaa1f60483fc454317793115d4fd0b3466f7fff9232a2bf3606f",
+        "signature": "306dbf860bfdb58518c8f66e366d9ac396c636f7a64a999b0de5b951c9d363de",
+        "affectsGlobalScope": false
+      },
+      "./src/tasks/start.ts": {
+        "version": "81ae638380f53118420fb714230d9f748238f97be8a6b6e82d27286bb79c4d63",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "./node_modules/@babel/types/lib/index.d.ts": {
@@ -1364,10 +1364,15 @@
         "./src/config.ts"
       ],
       "./src/tasks/events.ts": [
-        "./node_modules/bullmq/dist/index.d.ts"
+        "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
         "./node_modules/bullmq/dist/index.d.ts"
+      ],
+      "./src/tasks/start.ts": [
+        "./src/tasks/events.ts",
+        "./src/tasks/queue.ts"
       ]
     },
     "exportedModulesMap": {
@@ -2081,8 +2086,8 @@
       "./src/index.ts",
       "./src/nodemailer.ts",
       "./src/tasks/events.ts",
-      "./src/tasks/jobs.ts",
-      "./src/tasks/queue.ts"
+      "./src/tasks/queue.ts",
+      "./src/tasks/start.ts"
     ]
   },
   "version": "4.2.3"

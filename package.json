@@ -6,6 +6,7 @@
     "scripts": {
         "build": "tsc",
         "start": "node dist/index.js",
+        "tasks": "node dist/tasks/start.js",
         "test": "jest"
     },
     "author": "Serkan YESILDAG",
