@@ -161,6 +161,11 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
+      "./src/config.ts": {
+        "version": "c3896a59650d5442b88f8ac11e7ebd30aacca16eb25c11b030d4ce3e0687ee63",
+        "signature": "d531e319ea8ed82878f07c348250c995048a5040aa1a574a9764240573bf84b5",
+        "affectsGlobalScope": false
+      },
       "./src/generator.ts": {
         "version": "5a6d0b6fe05f9ef1704874b84584976cd24fcfc52e30049793656ec9f7af1f21",
         "signature": "e3cdbf38461ba69c6475809f783f2eb12e908c7ce51a6314f17803249efd64ff",
@@ -482,13 +487,23 @@
         "affectsGlobalScope": false
       },
       "./src/nodemailer.ts": {
-        "version": "2047617356c628ef78ebf744fa63645074b847c4d38366f6efc25fcb0cf5492c",
-        "signature": "1f1449527f78e795ddd18127c12e84942732cab768869f83e1b65e221b2beef4",
+        "version": "7238e481ac2699a43357d8488002970ef779a6be76c9650cdef287ada8223246",
+        "signature": "6d62e24758ee7e605c37048f4e4eceb874adb4e983003e67b9579dadf128d301",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "2d825b41ac3cf34d6d1e3a4debfc18485f1c254268b8d025b8885dc93263ec96",
+        "version": "9d1b9db6ef88260adcd2e27f1c7d5be3dd68cc48e125b1a3bb1a7c42a693a554",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/ioredis/index.d.ts": {
+        "version": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "signature": "0fa3a51172f481a251e1aaa5dac1de23019a50b7a1c6156c4e8d1f991380a8c9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/bull/index.d.ts": {
+        "version": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
+        "signature": "cd707526ef2e6f586d6704c10dd3709845cb9d6fdd47ef3af34a5026094c12fa",
         "affectsGlobalScope": false
       }
     },
@@ -512,10 +527,20 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./node_modules/@types/bull/index.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@types/ioredis/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts"
       ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
@@ -878,14 +903,25 @@
       "./src/nodemailer.ts": [
         "./node_modules/@types/nodemailer/index.d.ts",
         "./node_modules/@types/nodemailer/lib/mailer/index.d.ts",
-        "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts"
+        "./node_modules/@types/nodemailer/lib/smtp-transport.d.ts",
+        "./src/config.ts"
       ]
     },
     "exportedModulesMap": {
+      "./node_modules/@types/bull/index.d.ts": [
+        "./node_modules/@types/ioredis/index.d.ts",
+        "./node_modules/@types/node/events.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
+      ],
+      "./node_modules/@types/ioredis/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts"
       ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
@@ -1247,7 +1283,9 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "./node_modules/@types/bull/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
+      "./node_modules/@types/ioredis/index.d.ts",
       "./node_modules/@types/minimatch/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
@@ -1342,6 +1380,7 @@
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.scripthost.d.ts",
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "./src/config.ts",
       "./src/generator.ts",
       "./src/index.ts",
       "./src/nodemailer.ts"

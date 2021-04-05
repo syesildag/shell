@@ -1,7 +1,7 @@
 import { config, grep, ls, pwd, ShellString } from 'shelljs';
 
 import counter from './generator';
-import send, { testMailOptions, testSmtpTransportOptions } from './nodemailer';
+import sendEmail from './nodemailer';
 
 config.verbose = true;
 
@@ -32,5 +32,4 @@ while (!curr.done) {
 }
 console.log(curr.value.toUpperCase());
 
-send(testSmtpTransportOptions, testMailOptions)
-   .catch(console.error);
+sendEmail().catch(console.error);
