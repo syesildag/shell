@@ -2,7 +2,7 @@ import nodemailer, { SentMessageInfo } from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
-import { Config } from './config';
+import { Config } from '../config';
 
 export const testSmtpTransportOptions: SMTPTransport.Options = {
    host: "smtp.live.com",
