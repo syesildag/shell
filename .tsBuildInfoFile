@@ -677,17 +677,17 @@
         "affectsGlobalScope": false
       },
       "./src/tasks/jobList.ts": {
-        "version": "a1c746d389f984339e344e3de98ddcacc7448c794651d925c61a61365554a4df",
-        "signature": "a9d429faee1baa05bf3a6185d9e7adfe32d81d42b4eae335ea9e1f2f0a57fb96",
+        "version": "9f3503337b91cf253a231b36656126b202860d5995631e341db4414942439919",
+        "signature": "bebe40d9f7ab1852fcc154988c999aa5b2b358876ff04da17bc02deeae30b54f",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobFactory.ts": {
-        "version": "c8c892fe738d36970a0be00427a58a6cd3b94e4d18c094665796ffef07558b26",
+        "version": "6a01454ea0e42bbdcd8240a59fd147d8cda0f2d1b4f89725219da9f59dde1840",
         "signature": "858d355510c78d9cb666ae88062bf9e0d6b545df0f68e3c7e2debbb43f4d43f4",
         "affectsGlobalScope": false
       },
       "./src/tasks/queue.ts": {
-        "version": "937df8d474a4d822d6dbf29c267ae59d96f50502aed9f27e67c79108d7ca9937",
+        "version": "fb7c8adfdf8d9d42d6293f857a1b79cf448d47b582caa03022ff44f0ed390e67",
         "signature": "17df3c44eafb09550c17ba6bd66693eddf23f036ce59b1919ce7cdb8962d74ef",
         "affectsGlobalScope": false
       },
@@ -1415,6 +1415,7 @@
         "./src/utils/genericFactory.ts"
       ],
       "./src/tasks/jobList.ts": [
+        "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/jobs/builder.ts",
         "./src/tasks/jobs/invalidator.ts",
         "./src/tasks/queue.ts",
@@ -2009,6 +2010,7 @@
         "./src/utils/genericFactory.ts"
       ],
       "./src/tasks/jobList.ts": [
+        "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/queue.ts",
         "./src/utils/genericFactory.ts"
       ],
