@@ -12,11 +12,11 @@ export interface Info {
    options?: JobsOptions
 }
 
-export const secondlyTasks: Record<JobDataType, Info> = {
-   "invalidator": {
-      constructor: InvalidatorJob
-   },
-   "builder": {
-      constructor: BuilderJob
-   }
-};
+export const secondlyTasks = new Map<JobDataType, Info>([
+   ["invalidator", { constructor: InvalidatorJob }],
+   ["builder", { constructor: BuilderJob }]
+]);
+
+export const factory = new GenericFactory.Base<JobDataType, JobProcessor>(
+   ...Array.from(secondlyTasks.values()).map(info => info.constructor)
+);

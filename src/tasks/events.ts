@@ -4,39 +4,43 @@ import { name, queueBaseOptions } from './queue';
 
 export let queueEvents: QueueEvents;
 
+function log(...args: any[]) {
+   console.log(`Job ${JSON.stringify(args)}`);
+}
+
 export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    queueEvents = new QueueEvents(name, opts);
 
-   queueEvents.on('waiting', ({ jobId }, timestamp) => {
-      console.log(`A job with ID ${jobId} is waiting`);
+   queueEvents.on('waiting', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('removed', ({ jobId }, timestamp) => {
-      console.log(`A job with ID ${jobId} is removed`);
+   queueEvents.on('removed', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('stalled', ({ jobId }, timestamp) => {
-      console.log(`A job with ID ${jobId} is stalled`);
+   queueEvents.on('stalled', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('delayed', ({ jobId, delay }, timestamp) => {
-      console.log(`A job with ID ${jobId} is delayed ${delay}`);
+   queueEvents.on('delayed', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('drained', (id) => {
-      console.log(`A job with ID ${id} is drained`);
+   queueEvents.on('drained', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('progress', ({ jobId, data }, timestamp) => {
-      console.log(`${jobId} reported progress ${data} at ${timestamp}`);
+   queueEvents.on('progress', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('completed', ({ jobId, returnvalue }, timestamp) => {
-      console.log(`${jobId} has completed and returned ${returnvalue}`);
+   queueEvents.on('completed', (...args) => {
+      log(args);
    });
 
-   queueEvents.on('failed', ({ jobId, failedReason }, timestamp) => {
-      console.log(`${jobId} has failed with reason ${failedReason}`);
+   queueEvents.on('failed', (...args) => {
+      log(args);
    });
 }
