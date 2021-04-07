@@ -41,8 +41,9 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
    for (const [dataType, info] of secondlyTasks.entries()) {
       console.log(`adding job ${dataType} to queue.`);
       queue.add(`secondly-${dataType}`, dataType as JobDataType, {
+         ...info.options,
          repeat: {
-            ...info.options,
+            ...info.options.repeat,
             every: 1000
          }
       });
