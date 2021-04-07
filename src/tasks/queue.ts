@@ -43,7 +43,8 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
       queue.add(`secondly-${dataType}`, dataType, {
          ...info.options,
          repeat: {
-            ...info.options.repeat,
+            ...info.options?.repeat,
+            cron: null,
             every: 1000
          }
       });
