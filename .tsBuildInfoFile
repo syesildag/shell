@@ -527,8 +527,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/bullmq/dist/interfaces/jobs-options.d.ts": {
-        "version": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
-        "signature": "00c748752d3638ccc00ea7acedb3fb1f3f71a35f89c3f2b0c5225a0c4f349336",
+        "version": "586dbafa2f4074e590d20d98b0639fc379b122a7fd355559f4a6b35776713018",
+        "signature": "586dbafa2f4074e590d20d98b0639fc379b122a7fd355559f4a6b35776713018",
         "affectsGlobalScope": false
       },
       "./node_modules/bullmq/dist/interfaces/redis-options.d.ts": {
@@ -667,28 +667,28 @@
         "affectsGlobalScope": false
       },
       "./src/tasks/jobs/builder.ts": {
-        "version": "e7cdcf3c1fea31e3785c67c0fdb35dd8c9e96bc3a27f8b3f52fd9682288bcabf",
-        "signature": "780dc73b795d7025a59a1f0b551477a1fbef17dc4c7dda2b9ac78d6334e97929",
+        "version": "3f14ec7c1b6096b986aa36f8fd7b474880da661a28d8102647da2b68a9d3c7e5",
+        "signature": "15d94c5b25765b61734e2713ed681aba588e3e0f58c8af14e721b6cc5a0a4434",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobs/invalidator.ts": {
-        "version": "64497b693ea031015a07037292f2548d735e736bc06e8aa56bd8fefdf4894edd",
-        "signature": "a850ed6903ac20c6048ca7c5a85ccfb51ac7caf77fe4756eeb50b211c777219b",
+        "version": "78e134c84c20578b4972069c8a84ffc1cabc1cb29115ae8ed3b0caa63d10896c",
+        "signature": "042a6b8488bee2be9fbf0c57325d879ffd4e74a3874423fec47e7c2e59f21345",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobList.ts": {
-        "version": "517d23828dbd28b3a14f0688d525779428a7bda1ec90219468c91261db68268f",
-        "signature": "7c7b3f509e771bc74fec320ef71e97e1c702cc397566033ef8c8d4c345b9348f",
+        "version": "a1c746d389f984339e344e3de98ddcacc7448c794651d925c61a61365554a4df",
+        "signature": "a9d429faee1baa05bf3a6185d9e7adfe32d81d42b4eae335ea9e1f2f0a57fb96",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobFactory.ts": {
-        "version": "4010ba383e1bf99dc14d84ced7f559ec183809788910c72e9a9773de4384d547",
-        "signature": "809d0e2dbac2ddf18808f595ba6704779b563a1857a66bb37325285b16c756d2",
+        "version": "c8c892fe738d36970a0be00427a58a6cd3b94e4d18c094665796ffef07558b26",
+        "signature": "858d355510c78d9cb666ae88062bf9e0d6b545df0f68e3c7e2debbb43f4d43f4",
         "affectsGlobalScope": false
       },
       "./src/tasks/queue.ts": {
-        "version": "2575ede83817b4fd8943a019392d0117ec2d8ca244db6b1ac496bde096fcbac4",
-        "signature": "c2232a64e0ac412c726c73466bfc6a894905026b8d37eb7839090a934e6de6a6",
+        "version": "937df8d474a4d822d6dbf29c267ae59d96f50502aed9f27e67c79108d7ca9937",
+        "signature": "17df3c44eafb09550c17ba6bd66693eddf23f036ce59b1919ce7cdb8962d74ef",
         "affectsGlobalScope": false
       },
       "./src/tasks/events.ts": {
@@ -1422,10 +1422,12 @@
       ],
       "./src/tasks/jobs/builder.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/jobList.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/jobs/invalidator.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/jobList.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
@@ -2002,6 +2004,7 @@
         "./node_modules/bullmq/dist/index.d.ts"
       ],
       "./src/tasks/jobFactory.ts": [
+        "./src/tasks/jobList.ts",
         "./src/tasks/queue.ts",
         "./src/utils/genericFactory.ts"
       ],
@@ -2011,14 +2014,17 @@
       ],
       "./src/tasks/jobs/builder.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/jobList.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/jobs/invalidator.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/jobList.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
+        "./src/tasks/jobList.ts",
         "./src/utils/functions.ts"
       ],
       "./src/utils/genericFactory.ts": [

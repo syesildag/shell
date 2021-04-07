@@ -3,16 +3,14 @@ import { Job, Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
 import { factory } from './jobFactory';
-import { secondlyTasks } from './jobList';
+import { JobDataType, secondlyTasks } from './jobList';
 
 export interface JobProcessor<T extends JobDataType = JobDataType, R extends JobReturnType = JobReturnType, N extends JobName = JobName> extends Functions.Supplier<T> {
    supply(): T;
    process(job: Job<T, R, N>): Promise<R>;
 }
 
-export type JobName = 'daily' | 'weekly' | 'hourly' | 'minutely' | 'secondly';
-
-export type JobDataType = 'invalidator' | 'builder';
+export type JobName = string;
 
 export type JobReturnType = void;
 
@@ -35,20 +33,23 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    queue = new Queue<JobDataType, void, JobName>(name, opts);
 
-   for (const dataType of Object.keys(secondlyTasks))
-      queue.add("secondly", dataType as JobDataType, {
+   for (const dataType of Object.keys(secondlyTasks)) {
+      console.log(`adding job ${dataType} to queue.`);
+      queue.add(`secondly-${dataType}`, dataType as JobDataType, {
          repeat: {
             every: 1000
          }
       });
+   }
 
    for (let index = 0; index < Config.nb_task_workers; index++) {
       new Worker<JobDataType, void, JobName>(name, async job => {
          const processor = factory.create(job.data);
          if (!processor) {
-            console.log(`no processor for task ${job.data}`);
+            console.log(`no processor for job ${JSON.stringify(job)}`);
             return;
          }
+         console.log(`processing job ${JSON.stringify(job)}`);
          return await processor.process(job);
       });
    }
