@@ -2,10 +2,14 @@ import { Job, Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
 
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
-import { factory } from './jobFactory';
-import { JobDataType, secondlyTasks } from './jobList';
+import { factory } from './factory';
+import { JobDataType, secondlyTasks } from './jobs';
 
-export interface JobProcessor<T extends JobDataType = JobDataType, R extends JobReturnType = JobReturnType, N extends JobName = JobName> extends Functions.Supplier<T> {
+export interface JobProcessor<
+   T extends JobDataType = JobDataType,
+   R extends JobReturnType = JobReturnType,
+   N extends JobName = JobName>
+   extends Functions.Supplier<T> {
    supply(): T;
    process(job: Job<T, R, N>): Promise<R>;
 }

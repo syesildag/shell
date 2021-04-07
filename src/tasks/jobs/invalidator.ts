@@ -1,6 +1,6 @@
 import { Job } from 'bullmq';
 
-import { JobDataType } from '../jobList';
+import { JobDataType } from '../jobs';
 import { JobName, JobProcessor } from '../queue';
 
 export default class InvalidatorJob implements JobProcessor {

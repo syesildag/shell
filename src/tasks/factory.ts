@@ -1,5 +1,5 @@
 import { GenericFactory } from '../utils/genericFactory';
-import { JobDataType, secondlyTasks } from './jobList';
+import { JobDataType, secondlyTasks } from './jobs';
 import { JobProcessor } from './queue';
 
 export const factory = new GenericFactory.Base<JobDataType, JobProcessor>(

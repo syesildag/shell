@@ -662,33 +662,33 @@
         "affectsGlobalScope": false
       },
       "./src/utils/genericFactory.ts": {
-        "version": "5eaddf7d330e1687d77320750fd58affa51cb6a025d083d591a0d069e1876abf",
-        "signature": "110971426bfdc30227f5021e4dd821ef92f826f4d07f30dbcd99420ee5621fe3",
+        "version": "a2135060c554fcd54d3f8e5fb3ee8ae7535b89ad4454e6d180498f066cc2edad",
+        "signature": "b855ca957a6f9485d1d0e2f218de233ccf7515a2bec676edaf2f070cefdcfe29",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobs/builder.ts": {
-        "version": "3f14ec7c1b6096b986aa36f8fd7b474880da661a28d8102647da2b68a9d3c7e5",
-        "signature": "15d94c5b25765b61734e2713ed681aba588e3e0f58c8af14e721b6cc5a0a4434",
+        "version": "104db755f2df788b0400e6c9cbee14305ff65c769602e36625a46116ea436e89",
+        "signature": "824657d4c1939d6ba94786e118de45abaa8b509eaf272df67350c36e64011968",
         "affectsGlobalScope": false
       },
       "./src/tasks/jobs/invalidator.ts": {
-        "version": "78e134c84c20578b4972069c8a84ffc1cabc1cb29115ae8ed3b0caa63d10896c",
-        "signature": "042a6b8488bee2be9fbf0c57325d879ffd4e74a3874423fec47e7c2e59f21345",
+        "version": "e49107b4d336a77d63a9a148dc9c70c01bfa0191f3558c311eac537ba9cdb3ac",
+        "signature": "be654e297204467eeb4b66c6131efc34e9cb3f34c9e948143686c6c47e764309",
         "affectsGlobalScope": false
       },
-      "./src/tasks/jobList.ts": {
+      "./src/tasks/jobs.ts": {
         "version": "9f3503337b91cf253a231b36656126b202860d5995631e341db4414942439919",
         "signature": "bebe40d9f7ab1852fcc154988c999aa5b2b358876ff04da17bc02deeae30b54f",
         "affectsGlobalScope": false
       },
-      "./src/tasks/jobFactory.ts": {
-        "version": "6a01454ea0e42bbdcd8240a59fd147d8cda0f2d1b4f89725219da9f59dde1840",
-        "signature": "858d355510c78d9cb666ae88062bf9e0d6b545df0f68e3c7e2debbb43f4d43f4",
+      "./src/tasks/factory.ts": {
+        "version": "ab6c64883fbd3ba9adc91b33a5c11181d0523ade86c096f4cd48688b34b795c3",
+        "signature": "b778984fe502d420a7210e971dfe21c9478db289dfc9274ca0791c5b90576106",
         "affectsGlobalScope": false
       },
       "./src/tasks/queue.ts": {
-        "version": "fb7c8adfdf8d9d42d6293f857a1b79cf448d47b582caa03022ff44f0ed390e67",
-        "signature": "17df3c44eafb09550c17ba6bd66693eddf23f036ce59b1919ce7cdb8962d74ef",
+        "version": "90184c2b1710ff55d8fc0c1d07cdd6e35cc91b2b8b6276d0f0c2db844e55c3f4",
+        "signature": "6363a3cae19e0a64843a700987a66b5a601905aa3cd16f088ac22ecc781c86e9",
         "affectsGlobalScope": false
       },
       "./src/tasks/events.ts": {
@@ -1409,12 +1409,12 @@
         "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/queue.ts"
       ],
-      "./src/tasks/jobFactory.ts": [
-        "./src/tasks/jobList.ts",
+      "./src/tasks/factory.ts": [
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts",
         "./src/utils/genericFactory.ts"
       ],
-      "./src/tasks/jobList.ts": [
+      "./src/tasks/jobs.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/jobs/builder.ts",
         "./src/tasks/jobs/invalidator.ts",
@@ -1423,19 +1423,19 @@
       ],
       "./src/tasks/jobs/builder.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/jobs/invalidator.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
         "./src/config.ts",
-        "./src/tasks/jobFactory.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/factory.ts",
+        "./src/tasks/jobs.ts",
         "./src/utils/functions.ts"
       ],
       "./src/tasks/start.ts": [
@@ -2004,29 +2004,29 @@
       "./src/tasks/events.ts": [
         "./node_modules/bullmq/dist/index.d.ts"
       ],
-      "./src/tasks/jobFactory.ts": [
-        "./src/tasks/jobList.ts",
+      "./src/tasks/factory.ts": [
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts",
         "./src/utils/genericFactory.ts"
       ],
-      "./src/tasks/jobList.ts": [
+      "./src/tasks/jobs.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
         "./src/tasks/queue.ts",
         "./src/utils/genericFactory.ts"
       ],
       "./src/tasks/jobs/builder.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/jobs/invalidator.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/jobs.ts",
         "./src/tasks/queue.ts"
       ],
       "./src/tasks/queue.ts": [
         "./node_modules/bullmq/dist/index.d.ts",
-        "./src/tasks/jobList.ts",
+        "./src/tasks/jobs.ts",
         "./src/utils/functions.ts"
       ],
       "./src/utils/genericFactory.ts": [
@@ -2191,8 +2191,8 @@
       "./src/mailer/nodemailer.ts",
       "./src/tasks/empty.ts",
       "./src/tasks/events.ts",
-      "./src/tasks/jobFactory.ts",
-      "./src/tasks/jobList.ts",
+      "./src/tasks/factory.ts",
+      "./src/tasks/jobs.ts",
       "./src/tasks/jobs/builder.ts",
       "./src/tasks/jobs/invalidator.ts",
       "./src/tasks/queue.ts",
