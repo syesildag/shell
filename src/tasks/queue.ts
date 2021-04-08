@@ -1,8 +1,8 @@
-import { Job, Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
+import { Job, Queue, QueueBaseOptions, QueueScheduler } from 'bullmq';
 
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
-import { cronTasks, factory, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
+import { cronTasks, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
 
 export interface JobProcessor<
    T extends JobDataType = JobDataType,
@@ -29,8 +29,6 @@ export const queueBaseOptions: QueueBaseOptions = {
 export let queue: Queue<JobDataType, void, JobName>;
 
 export let queueScheduler: QueueScheduler;
-
-export const workers: Worker[] = [];
 
 export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
@@ -69,16 +67,4 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
          }
       });
    }
-
-   for (let index = 0; index < Config.nb_task_workers; index++)
-      workers.push(
-         new Worker<JobDataType, void, JobName>(name, async job => {
-            const processor = factory.create(job.data);
-            if (!processor) {
-               console.log(`no processor for job ${JSON.stringify(job)}`);
-               return;
-            }
-            console.log(`processing job ${JSON.stringify(job)}`);
-            return await processor.process(job);
-         }));
 }

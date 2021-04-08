@@ -6,7 +6,8 @@
     "scripts": {
         "build": "tsc",
         "start": "node dist/index.js",
-        "tasks": "node dist/tasks/start.js",
+        "jobs": "node dist/tasks/startJobs.js",
+        "workers": "node dist/tasks/startWorkers.js",
         "test": "jest",
         "clean": "rm -fr dist/"
     },

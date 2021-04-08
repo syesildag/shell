@@ -1,21 +1,21 @@
+import { Config } from '../config';
 import deleteKeysByPattern from './empty';
 import initEvents, { queueEvents } from './events';
-import initQueue, { name, queue, queueScheduler, workers } from './queue';
+import initQueue, { name, queue, queueScheduler } from './queue';
 
-initEvents();
+if (Config.task_events)
+   initEvents();
+
 initQueue();
 
 process.once('SIGINT', async (signal: string) => {
    console.log(`Got ${signal}. exiting...`);
 
-   console.log(`closing workers...`);
-   for (const worker of workers)
-      await worker.close();
-   console.log(`closed workers.`);
-
-   console.log(`closing queueEvents...`);
-   await queueEvents.close();
-   console.log(`closed queueEvents.`);
+   if (queueEvents) {
+      console.log(`closing queueEvents...`);
+      await queueEvents.close();
+      console.log(`closed queueEvents.`);
+   }
 
    console.log(`closing queueScheduler...`);
    await queueScheduler.close();

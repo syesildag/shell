@@ -4,7 +4,7 @@ import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 import { Config } from '../config';
 
-export const testSmtpTransportOptions: SMTPTransport.Options = {
+export const testSmtpTransportOptions: Readonly<SMTPTransport.Options> = {
    host: "smtp.live.com",
    port: 587,
    requireTLS: true,
@@ -14,7 +14,7 @@ export const testSmtpTransportOptions: SMTPTransport.Options = {
    }
 };
 
-export const testMailOptions: Mail.Options = {
+export const testMailOptions: Readonly<Mail.Options> = {
    from: '"Serkan YESILDAG" <syesildag@hotmail.com>', // sender address
    to: "syesildag@hotmail.com, srknysldg@gmail.com", // list of receivers
    subject: "Hello subject ✔ 👻", // Subject line
