@@ -2,25 +2,37 @@ import { JobsOptions } from 'bullmq';
 
 import { GenericFactory } from '../utils/genericFactory';
 import BuilderJob from './jobs/builder';
+import CronuJob from './jobs/cronu';
 import InvalidatorJob from './jobs/invalidator';
-import MinutelyJob from './jobs/ninutely';
+import MinuJob from './jobs/minu';
 import { JobProcessor } from './queue';
 
-export type JobDataType = 'invalidator' | 'builder' | 'minutely';
+export type JobDataType = 'invalidator' | 'builder' | 'minu' | 'cronu';
 
 export interface Info {
    constructor: GenericFactory.Constructor<JobDataType, JobProcessor>,
    options?: JobsOptions
 }
 
-export const secondlyTasks = new Map<JobDataType, Info>([
-   ["invalidator", { constructor: InvalidatorJob }],
-   ["builder", { constructor: BuilderJob }]
-]);
+export const secondlyTasks: Info[] = [
+   { constructor: InvalidatorJob },
+   { constructor: BuilderJob }
+];
 
-export const minutelyTasks = new Map<JobDataType, Info>([
-   ["minutely", { constructor: MinutelyJob }]
-]);
+export const minutelyTasks: Info[] = [
+   { constructor: MinuJob }
+];
+
+// @see https://github.com/harrisiirak/cron-parser
+export const cronTasks: Info[] = [{
+   constructor: CronuJob,
+   options: {
+      repeat: {
+         // Repeat job once every day at 3:15 (am)
+         cron: '* 15 3 * * *'
+      }
+   }
+}];
 
 export const factory = new GenericFactory.Base<JobDataType, JobProcessor>(
    ...Array.from(secondlyTasks.values()).map(info => info.constructor)

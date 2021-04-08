@@ -2,7 +2,7 @@ import { Job, Queue, QueueBaseOptions, QueueScheduler, Worker } from 'bullmq';
 
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
-import { factory, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
+import { cronTasks, factory, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
 
 export interface JobProcessor<
    T extends JobDataType = JobDataType,
@@ -38,26 +38,34 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    queue = new Queue<JobDataType, void, JobName>(name, opts);
 
-   for (const [dataType, info] of secondlyTasks.entries()) {
-      console.log(`adding secondly job ${dataType} to queue.`);
-      queue.add(`secondly-${dataType}`, dataType, {
-         ...info.options,
-         repeat: {
-            ...info.options?.repeat,
-            cron: null,
-            every: 1000
-         }
-      });
+   let repeatables: Array<{ every: number, infos: Array<Info> }> = [
+      { every: 1000, infos: secondlyTasks },
+      { every: 60000, infos: minutelyTasks },
+   ];
+
+   for (const repeatable of repeatables) {
+      for (const info of repeatable.infos) {
+         const dataType = new info.constructor().supply();
+         console.log(`adding ${repeatable.every} job ${dataType} to queue.`);
+         queue.add(`${repeatable.every}-${dataType}`, dataType, {
+            ...info.options,
+            repeat: {
+               ...info.options?.repeat,
+               cron: null,
+               every: repeatable.every
+            }
+         });
+      }
    }
 
-   for (const [dataType, info] of minutelyTasks.entries()) {
-      console.log(`adding minutely job ${dataType} to queue.`);
-      queue.add(`minutely-${dataType}`, dataType, {
+   for (const info of cronTasks) {
+      const dataType = new info.constructor().supply();
+      console.log(`adding cron job ${dataType} to queue.`);
+      queue.add(`cron-${dataType}`, dataType, {
          ...info.options,
          repeat: {
             ...info.options?.repeat,
-            cron: null,
-            every: 60000
+            every: null,
          }
       });
    }
