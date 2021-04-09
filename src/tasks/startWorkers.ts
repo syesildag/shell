@@ -11,7 +11,7 @@ for (let index = 0; index < Config.nb_task_workers; index++)
       new Worker<JobDataType, void, JobName>(name, async job => {
          const processor = factory.create(job.data);
          if (!processor) {
-            logger.info(`no processor for job ${JSON.stringify(job)}`);
+            logger.warn(`no processor for job ${JSON.stringify(job)}`);
             return;
          }
          logger.info(`processing job ${JSON.stringify(job)}`);

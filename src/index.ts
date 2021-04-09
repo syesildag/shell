@@ -21,4 +21,6 @@ result.stdout.split('\n').forEach(file => {
    }
 });
 
-//sendEmail().catch(console.error);
+logger.warn("finish!");
+
+//sendEmail({ ...testMailOptions, text: 'cronu job', html: '<h3>Cronu Job</h3>' });
