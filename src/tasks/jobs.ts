@@ -28,8 +28,8 @@ export const cronTasks: Info[] = [{
    constructor: CronuJob,
    options: {
       repeat: {
-         // Repeat job once every day at 9:00 (pm)
-         cron: '* 00 21 * * *'
+         // Repeat job once every day at 9:35 (pm)
+         cron: '* 35 21 * * *'
       }
    }
 }];

@@ -1,11 +1,12 @@
 import { QueueBaseOptions, QueueEvents } from 'bullmq';
 
+import { logger } from '../utils/logger';
 import { name, queueBaseOptions } from './queue';
 
 export let queueEvents: QueueEvents;
 
 function log(...args: any[]) {
-   console.log(`Job ${JSON.stringify(args)}`);
+   logger.debug(`Job ${JSON.stringify(args)}`);
 }
 
 export default function init(opts: QueueBaseOptions = queueBaseOptions): void {

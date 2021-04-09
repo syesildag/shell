@@ -2,6 +2,7 @@ import { Job, Queue, QueueBaseOptions, QueueScheduler } from 'bullmq';
 
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
+import { logger } from '../utils/logger';
 import { cronTasks, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
 
 export interface JobProcessor<
@@ -44,7 +45,7 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
    for (const repeatable of repeatables) {
       for (const info of repeatable.infos) {
          const dataType = new info.constructor().supply();
-         console.log(`adding ${repeatable.every} job ${dataType} to queue.`);
+         logger.info(`adding ${repeatable.every} job ${dataType} to queue.`);
          queue.add(`${repeatable.every}-${dataType}`, dataType, {
             ...info.options,
             repeat: {
@@ -58,7 +59,7 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    for (const info of cronTasks) {
       const dataType = new info.constructor().supply();
-      console.log(`adding cron job ${dataType} to queue.`);
+      logger.info(`adding cron job ${dataType} to queue.`);
       queue.add(`cron-${dataType}`, dataType, {
          ...info.options,
          repeat: {
