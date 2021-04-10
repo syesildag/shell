@@ -14,12 +14,12 @@ export interface Info {
    options?: JobsOptions
 }
 
-export const secondlyTasks: Info[] = [
+export const secondlyTasks: readonly Readonly<Info>[] = [
    { constructor: InvalidatorJob },
    { constructor: BuilderJob }
 ];
 
-export const minutelyTasks: Info[] = [
+export const minutelyTasks: readonly Readonly<Info>[] = [
    { constructor: MinuJob }
 ];
 
@@ -33,7 +33,7 @@ export const minutelyTasks: Info[] = [
 //│    │    └─────────────── hour(0 - 23)
 //│    └──────────────────── minute(0 - 59)
 //└───────────────────────── second(0 - 59, optional)
-export const cronTasks: Info[] = [{
+export const cronTasks: readonly Readonly<Info>[] = [{
    constructor: CronuJob,
    options: {
       repeat: {

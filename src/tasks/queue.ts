@@ -37,9 +37,9 @@ export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
 
    queue = new Queue<JobDataType, void, JobName>(name, opts);
 
-   let repeatables: Array<{ every: number, infos: Array<Info> }> = [
-      { every: 1000, infos: secondlyTasks },
-      { every: 60000, infos: minutelyTasks },
+   let repeatables: Array<{ every: number, infos: Info[] }> = [
+      { every: 1000, infos: [...secondlyTasks] },
+      { every: 60000, infos: [...minutelyTasks] },
    ];
 
    for (const repeatable of repeatables) {
