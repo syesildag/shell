@@ -16,12 +16,15 @@
     "dependencies": {
         "bullmq": "^1.15.1",
         "nodemailer": "^6.5.0",
+        "pg": "^8.5.1",
         "pino": "^6.11.2",
         "pino-pretty": "^4.7.1",
-        "shelljs": "^0.8.3"
+        "shelljs": "^0.8.3",
+        "typeorm": "^0.2.32"
     },
     "devDependencies": {
         "@types/jest": "^26.0.22",
+        "@types/node": "^14.14.37",
         "@types/nodemailer": "^6.4.1",
         "@types/pino": "^6.3.7",
         "@types/shelljs": "^0.8.8",

@@ -1,4 +1,5 @@
 import { config, grep, ls, pwd, ShellString } from 'shelljs';
+import { createConnection } from 'typeorm';
 
 import { logger } from './utils/logger';
 
@@ -20,6 +21,12 @@ result.stdout.split('\n').forEach(file => {
       logger.info(result.stdout);
    }
 });
+
+const connection = createConnection();
+connection.then(connection => {
+   // here you can start to work with your entities
+   logger.warn("connected!")
+}).catch(error => console.log(error));
 
 logger.warn("finish!");
 
