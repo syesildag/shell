@@ -1,4 +1,4 @@
-import { Job, Queue, QueueBaseOptions, QueueScheduler } from 'bullmq';
+import { Job, Queue, QueueBaseOptions } from 'bullmq';
 
 import { Config } from '../config';
 import { Functions } from '../utils/functions';
@@ -26,8 +26,6 @@ export const queueBaseOptions: Readonly<QueueBaseOptions> = {
       port: Config.redis_port
    }
 }
-
-export const queueScheduler = new QueueScheduler(name, queueBaseOptions);
 
 export const queue = new Queue<JobDataType, void, JobName>(name, queueBaseOptions);
 
