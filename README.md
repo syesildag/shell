@@ -1,2 +1,2 @@
 # shell
-bullmq, nodemailer, shelljs, typeorm etc.
+bullmq, nodemailer, shelljs, pino, typeorm etc.
