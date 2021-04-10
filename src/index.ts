@@ -1,6 +1,7 @@
 import { config, grep, ls, pwd, ShellString } from 'shelljs';
-import { createConnection } from 'typeorm';
 
+import connection from './connection';
+import { Country } from './entity/country';
 import { logger } from './utils/logger';
 
 config.verbose = true;
@@ -22,11 +23,15 @@ result.stdout.split('\n').forEach(file => {
    }
 });
 
-const connection = createConnection();
-connection.then(connection => {
+connection.then(async connection => {
    // here you can start to work with your entities
-   logger.warn("connected!")
-}).catch(error => console.log(error));
+   logger.warn("connected!");
+   let repo = connection.getRepository(Country);
+   let countries = await repo.find();
+   for (const country of countries)
+      logger.warn(JSON.stringify(country));
+   process.exit(0);
+}).catch(error => logger.error(error));
 
 logger.warn("finish!");
 
