@@ -1,7 +1,7 @@
 import { createConnection } from 'typeorm';
 
-import config from './ormconfig';
+import ormconfig from './ormconfig';
 
-const connection = createConnection(config);
+const connection = createConnection(ormconfig);
 
 export default connection;
