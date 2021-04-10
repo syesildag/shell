@@ -1,13 +1,12 @@
 import { JobsOptions } from 'bullmq';
 
 import { GenericFactory } from '../utils/genericFactory';
-import BuilderJob from './jobs/builder';
 import CronuJob from './jobs/cronu';
-import InvalidatorJob from './jobs/invalidator';
 import MinuJob from './jobs/minu';
+import SecuJob from './jobs/secu';
 import { JobProcessor } from './queue';
 
-export type JobDataType = 'invalidator' | 'builder' | 'minu' | 'cronu';
+export type JobDataType = 'secu' | 'minu' | 'cronu';
 
 export interface Info {
    constructor: GenericFactory.Constructor<JobDataType, JobProcessor>,
@@ -15,8 +14,7 @@ export interface Info {
 }
 
 export const secondlyTasks: readonly Readonly<Info>[] = [
-   { constructor: InvalidatorJob },
-   { constructor: BuilderJob }
+   { constructor: SecuJob }
 ];
 
 export const minutelyTasks: readonly Readonly<Info>[] = [

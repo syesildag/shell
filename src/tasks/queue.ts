@@ -20,52 +20,45 @@ export type JobReturnType = void;
 
 export const name = "Queue";
 
-export const queueBaseOptions: QueueBaseOptions = {
+export const queueBaseOptions: Readonly<QueueBaseOptions> = {
    connection: {
       host: Config.redis_host,
       port: Config.redis_port
    }
 }
 
-export let queue: Queue<JobDataType, void, JobName>;
+export const queueScheduler = new QueueScheduler(name, queueBaseOptions);
 
-export let queueScheduler: QueueScheduler;
+export const queue = new Queue<JobDataType, void, JobName>(name, queueBaseOptions);
 
-export default function init(opts: QueueBaseOptions = queueBaseOptions): void {
+const repeatables: Array<{ every: number, infos: Info[] }> = [
+   { every: 1000, infos: [...secondlyTasks] },
+   { every: 60000, infos: [...minutelyTasks] },
+];
 
-   queueScheduler = new QueueScheduler(name, opts);
-
-   queue = new Queue<JobDataType, void, JobName>(name, opts);
-
-   let repeatables: Array<{ every: number, infos: Info[] }> = [
-      { every: 1000, infos: [...secondlyTasks] },
-      { every: 60000, infos: [...minutelyTasks] },
-   ];
-
-   for (const repeatable of repeatables) {
-      for (const info of repeatable.infos) {
-         const dataType = new info.constructor().supply();
-         logger.info(`adding ${repeatable.every} job ${dataType} to queue.`);
-         queue.add(`${repeatable.every}-${dataType}`, dataType, {
-            ...info.options,
-            repeat: {
-               ...info.options?.repeat,
-               cron: null,
-               every: repeatable.every
-            }
-         });
-      }
-   }
-
-   for (const info of cronTasks) {
+for (const repeatable of repeatables) {
+   for (const info of repeatable.infos) {
       const dataType = new info.constructor().supply();
-      logger.info(`adding cron job ${dataType} to queue.`);
-      queue.add(`cron-${dataType}`, dataType, {
+      logger.info(`adding ${repeatable.every} job ${dataType} to queue.`);
+      queue.add(`${repeatable.every}-${dataType}`, dataType, {
          ...info.options,
          repeat: {
             ...info.options?.repeat,
-            every: null,
+            cron: null,
+            every: repeatable.every
          }
       });
    }
+}
+
+for (const info of cronTasks) {
+   const dataType = new info.constructor().supply();
+   logger.info(`adding cron job ${dataType} to queue.`);
+   queue.add(`cron-${dataType}`, dataType, {
+      ...info.options,
+      repeat: {
+         ...info.options?.repeat,
+         every: null,
+      }
+   });
 }

@@ -1,9 +1,6 @@
 import deleteKeysByPattern from './empty';
-import initEvents, { queueEvents } from './events';
-import initQueue, { name, queue, queueScheduler } from './queue';
-
-initEvents();
-initQueue();
+import queueEvents from './events';
+import { name, queue, queueScheduler } from './queue';
 
 process.once('SIGINT', async (signal: string) => {
    console.log(`Got ${signal}. exiting...`);

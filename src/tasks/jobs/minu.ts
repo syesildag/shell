@@ -10,7 +10,7 @@ export default class MinuJob implements JobProcessor {
    }
    //process: Processor<JobDataType, void, JobName>;
    process(job: Job<JobDataType, void, JobName>): Promise<void> {
-      logger.warn(`running minutely job...`);
+      logger.warn(`running minu job...`);
       return;
    }
 }
