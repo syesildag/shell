@@ -37,14 +37,21 @@ export const cronTasks: Info[] = [{
    constructor: CronuJob,
    options: {
       repeat: {
-         // Repeat job once every day at 10:25:15 (pm)
-         cron: '15 25 22 * * *'
+         // Repeat job once every day at 11:35:40 (am)
+         cron: '40 35 11 * * *'
       }
    }
 }];
 
 export const factory = new GenericFactory.Base<JobDataType, JobProcessor>(
-   ...Array.from(secondlyTasks.values()).map(info => info.constructor),
-   ...Array.from(minutelyTasks.values()).map(info => info.constructor),
-   ...Array.from(cronTasks.values()).map(info => info.constructor),
+   ...
+   [
+      secondlyTasks,
+      minutelyTasks,
+      cronTasks
+   ]
+      .map(t => t.values())
+      .map(values => Array.from(values))
+      .reduce((a, b) => a.concat(b), [])
+      .map(info => info.constructor)
 );
