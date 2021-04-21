@@ -1,2 +1,1 @@
-# shell
-bullmq, nodemailer, shelljs, pino, typeorm etc.
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

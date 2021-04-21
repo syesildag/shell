@@ -1,41 +1,54 @@
 {
-    "name": "shell",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
     "scripts": {
-        "build": "tsc",
-        "start": "node dist/index.js",
-        "jobs": "node dist/tasks/startJobs.js",
-        "workers": "node dist/tasks/startWorkers.js",
-        "test": "jest",
-        "clean": "rm -fr dist/"
+        "clean": "rm lib/.tsBuildInfoFile; rm -fr lib/dist; rm -fr .next",
+        "lib": "tsc --project lib",
+        "dev": "next dev",
+        "build": "next build",
+        "package": "npm run clean; npm run lib; npm run build",
+        "start": "next start",
+        "jobs": "node lib/dist/tasks/startJobs.js",
+        "workers": "node lib/dist/tasks/startWorkers.js",
+        "test": "jest"
     },
-    "author": "Serkan YESILDAG",
-    "license": "MIT",
     "dependencies": {
-        "bullmq": "^1.15.1",
+        "bullmq": "^1.20.0",
+        "date-fns": "^2.11.1",
+        "gray-matter": "^4.0.2",
+        "next": "^10.0.0",
         "nodemailer": "^6.5.0",
-        "pg": "^8.5.1",
-        "pino": "^6.11.2",
+        "pg": "^8.6.0",
+        "pino": "^6.11.3",
         "pino-pretty": "^4.7.1",
-        "shelljs": "^0.8.3",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "reflect-metadata": "^0.1.13",
+        "remark": "^12.0.0",
+        "remark-html": "^12.0.0",
+        "shelljs": "^0.8.4",
         "typeorm": "^0.2.32"
     },
     "devDependencies": {
+        "@babel/core": "^7.13.15",
+        "@babel/plugin-proposal-decorators": "^7.13.15",
         "@types/jest": "^26.0.22",
-        "@types/node": "^14.14.37",
+        "@types/node": "^14.14.41",
         "@types/nodemailer": "^6.4.1",
         "@types/pino": "^6.3.7",
+        "@types/react": "^17.0.3",
         "@types/shelljs": "^0.8.8",
+        "babel-plugin-transform-typescript-metadata": "^0.3.2",
         "jest": "^26.6.3",
-        "tslint": "^6.1.3",
-        "typescript": "^4.1.3"
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4"
     },
     "jest": {
         "verbose": true,
         "roots": [
-            "<rootDir>/dist/"
+            "<rootDir>/lib/dist/"
         ]
     }
 }
