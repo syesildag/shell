@@ -1,12 +1,11 @@
 import { JobsOptions } from 'bullmq';
 
 import { GenericFactory } from '../utils/genericFactory';
-import CronuJob from './jobs/cronu';
-import MinuJob from './jobs/minu';
-import SecuJob from './jobs/secu';
+import CronuJob from './jobs/cron/cronu';
+import HouruJob from './jobs/hour/houru';
 import { JobProcessor } from './queue';
 
-export type JobDataType = 'secu' | 'minu' | 'cronu';
+export type JobDataType = 'houru' | 'cronu';
 
 export interface Info {
    constructor: GenericFactory.Constructor<JobDataType, JobProcessor>,
@@ -14,11 +13,13 @@ export interface Info {
 }
 
 export const secondlyTasks: readonly Readonly<Info>[] = [
-   { constructor: SecuJob }
 ];
 
 export const minutelyTasks: readonly Readonly<Info>[] = [
-   { constructor: MinuJob }
+];
+
+export const hourlyTasks: readonly Readonly<Info>[] = [
+   { constructor: HouruJob }
 ];
 
 // @see https://github.com/harrisiirak/cron-parser
@@ -46,6 +47,7 @@ export const factory = new GenericFactory.Base<JobDataType, JobProcessor>(
    [
       secondlyTasks,
       minutelyTasks,
+      hourlyTasks,
       cronTasks
    ]
       .map(t => t.values())

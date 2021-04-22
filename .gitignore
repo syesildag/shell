@@ -2,7 +2,6 @@
 
 lib/dist
 lib/.tsBuildInfoFile
-lib/src/config.ts
 
 # dependencies
 /node_modules

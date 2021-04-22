@@ -6,6 +6,7 @@ import { Author } from './typeorm/entity/author';
 import { Country } from './typeorm/entity/country';
 import { Photo } from './typeorm/entity/photo';
 import { PhotoMetadata } from './typeorm/entity/photoMetadata';
+import env from './utils/env';
 import logger from './utils/logger';
 
 config.verbose = true;
@@ -18,7 +19,7 @@ let list = ls(`-A`);
 
 logger.info(list.grep('tsconfig').stdout);
 
-let result = grep(`-l`, /config/gi, "src/index*");
+let result = grep(`-l`, /config/gi, "lib/src/index*");
 
 result.stdout.split('\n').forEach(file => {
    if (file) {
@@ -27,22 +28,25 @@ result.stdout.split('\n').forEach(file => {
    }
 });
 
+logger.info("environment=>");
+logger.info(env);
+
 connect().then(async connection => {
 
-   logger.warn("connected!");
+   logger.info("connected!");
 
    let entityMetadatas = connection.entityMetadatas;
-   logger.warn(`tableNames:`);
+   logger.info(`tableNames:`);
    for (const entityMetadata of entityMetadatas) {
-      logger.warn(`-> ${entityMetadata.tableName}`);
+      logger.info(`-> ${entityMetadata.tableName}`);
       if (entityMetadata.tableName !== "country" && entityMetadata.name !== Author.name) {
-         logger.warn(`--> clearing table ${entityMetadata.tableName}`);
+         logger.info(`--> clearing table ${entityMetadata.tableName}`);
          const repository = connection.getRepository(entityMetadata.name);
          await repository.delete({});
       }
    }
 
-   logger.warn(`--> clearing table ${Author.name}`);
+   logger.info(`--> clearing table ${Author.name}`);
    const repository = connection.getRepository(Author);
    await repository.delete({});
 
@@ -53,7 +57,7 @@ connect().then(async connection => {
       .setParameters({ countryName: "Turkey" })
       .getOne();
 
-   logger.warn(JSON.stringify(turkey));
+   logger.info(JSON.stringify(turkey));
 
    // create a few albums
    let album1 = new Album();
@@ -90,11 +94,11 @@ connect().then(async connection => {
    photo.metadata = metadata; // this way we connect them
 
    let savedPhoto = await repo.save(photo);
-   logger.warn("Photo has been saved. Photo id is", savedPhoto.id);
-   logger.warn("exiting!");
+   logger.info("Photo has been saved. Photo id is", savedPhoto.id);
+   logger.info("exiting!");
    process.exit(0);
 }).catch(error => logger.error(error));
 
-logger.warn("finish!");
+logger.info("finish!");
 
 //sendEmail({ ...testMailOptions, text: 'cronu job', html: '<h3>Cronu Job</h3>' });

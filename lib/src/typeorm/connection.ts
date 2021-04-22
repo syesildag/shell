@@ -1,6 +1,6 @@
 import { Connection, ConnectionNotFoundError, createConnection, EntityTarget, getConnection } from 'typeorm';
 
-import { isDevEnvironment } from '../utils/environment';
+import { isDevEnvironment } from '../utils/env';
 import logger from '../utils/logger';
 import { Utils } from '../utils/utils';
 import getConnectionOptions from './ormconfig';
@@ -10,13 +10,13 @@ async function connect() {
    try {
       connection = getConnection();
       if (isDevEnvironment) {
-         logger.warn("closing existing typeorm connection");
+         logger.debug("closing existing typeorm connection");
          await connection.close();
          connection = await createConnection(getConnectionOptions());
       }
    } catch (error) {
       if (error instanceof ConnectionNotFoundError) {
-         logger.warn("typeorm connection not found");
+         logger.debug("typeorm connection not found");
          connection = await createConnection(getConnectionOptions());
       }
       else {

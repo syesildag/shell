@@ -1,12 +1,11 @@
 import pino from 'pino';
 
-import Config from '../config';
-import { isProdEnvironment } from './environment';
+import env, { isProdEnvironment } from './env';
 
 const logger = pino({
    name: "shell",
-   level: Config.LOG_LEVEL || "warn",
-   prettyPrint: !isProdEnvironment || Config.LOG_PRETTY_PRINT,
+   level: env.LOG_LEVEL ?? "warn",
+   prettyPrint: !isProdEnvironment || env.LOG_PRETTY_PRINT,
 });
 
 export default logger;

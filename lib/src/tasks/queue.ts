@@ -1,9 +1,9 @@
 import { Job, Queue, QueueBaseOptions } from 'bullmq';
 
-import Config from '../config';
+import env from '../utils/env';
 import { Functions } from '../utils/functions';
 import logger from '../utils/logger';
-import { cronTasks, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
+import { cronTasks, hourlyTasks, Info, JobDataType, minutelyTasks, secondlyTasks } from './jobs';
 
 export interface JobProcessor<
    T extends JobDataType = JobDataType,
@@ -22,8 +22,8 @@ export const name = "Queue";
 
 export const queueBaseOptions: Readonly<QueueBaseOptions> = {
    connection: {
-      host: Config.redis_host,
-      port: Config.redis_port
+      host: env.REDIS_HOST,
+      port: env.REDIS_PORT
    }
 }
 
@@ -32,6 +32,7 @@ export const queue = new Queue<JobDataType, void, JobName>(name, queueBaseOption
 const repeatables: Array<{ every: number, infos: Info[] }> = [
    { every: 1000, infos: [...secondlyTasks] },
    { every: 60000, infos: [...minutelyTasks] },
+   { every: 3600000, infos: [...hourlyTasks] },
 ];
 
 for (const repeatable of repeatables) {

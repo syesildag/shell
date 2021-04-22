@@ -1,18 +1,18 @@
 import { Worker } from 'bullmq';
 
-import Config from '../config';
+import env from '../utils/env';
 import logger from '../utils/logger';
 import { factory, JobDataType } from './jobs';
 import { JobName, name } from './queue';
 
 const workers: Worker<JobDataType, void, JobName>[] = [];
 
-for (let index = 0; index < Config.nb_task_workers; index++) {
+for (let index = 0; index < env.NB_TASK_WORKERS; index++) {
    workers.push(
       new Worker<JobDataType, void, JobName>(name, async job => {
          const processor = factory.create(job.data);
          if (!processor) {
-            logger.warn(`no processor for job ${JSON.stringify(job)}`);
+            logger.debug(`no processor for job ${JSON.stringify(job)}`);
             return;
          }
          logger.info(`processing job ${JSON.stringify(job)}`);

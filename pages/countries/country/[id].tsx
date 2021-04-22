@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps<{ country: Country }> = asyn
 
   let connection = await connect();
 
-  logger.warn("connected with params: " + JSON.stringify(params));
+  logger.debug("connected with params: " + JSON.stringify(params));
 
   let repo = connection.getRepository(Country);
 

@@ -1,8 +1,8 @@
 import Redis from 'ioredis';
 
-import Config from '../config';
+import env from '../utils/env';
 
-const redis = new Redis(Config.redis_port, Config.redis_host);
+const redis = new Redis(env.REDIS_PORT, env.REDIS_HOST);
 
 export default function deleteKeysByPattern(pattern: string) {
    return new Promise((resolve, reject) => {

@@ -2,15 +2,15 @@ import nodemailer, { SentMessageInfo } from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
-import Config from '../config';
+import env from '../utils/env';
 
 export const testSmtpTransportOptions: Readonly<SMTPTransport.Options> = {
    host: "smtp.live.com",
    port: 587,
    requireTLS: true,
    auth: {
-      user: Config.hotmail_user,
-      pass: Config.hotmail_pass
+      user: env.HOTMAIL_USER,
+      pass: env.HOTMAIL_PASS
    }
 };
 

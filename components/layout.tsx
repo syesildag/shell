@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
 const name = 'Serkan YESILDAG';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = `Home Page of ${name}`;
 
 export default function Layout({ children, home }: { children: React.ReactNode, home?: boolean }) {
   return (
@@ -15,26 +15,19 @@ export default function Layout({ children, home }: { children: React.ReactNode, 
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={siteTitle}
         />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/me.png"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={240}
+              width={160}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -45,10 +38,10 @@ export default function Layout({ children, home }: { children: React.ReactNode, 
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/me.png"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={150}
+                  width={100}
                   alt={name}
                 />
               </a>
