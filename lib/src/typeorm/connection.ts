@@ -10,9 +10,12 @@ async function connect() {
    try {
       connection = getConnection();
       if (isDevEnvironment) {
-         logger.debug("closing existing typeorm connection");
+         logger.debug("closing existing typeorm connection...");
          await connection.close();
+         logger.debug("closed existing typeorm connection.");
+         logger.debug("creating a new one...");
          connection = await createConnection(getConnectionOptions());
+         logger.debug("created a new one.");
       }
    } catch (error) {
       if (error instanceof ConnectionNotFoundError) {
