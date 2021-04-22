@@ -1,4 +1,4 @@
-import { Job, Queue, QueueBaseOptions } from 'bullmq';
+import { Job, Queue, QueueBaseOptions, RedisOptions } from 'bullmq';
 
 import env from '../utils/env';
 import { Functions } from '../utils/functions';
@@ -20,11 +20,14 @@ export type JobReturnType = void;
 
 export const name = "Queue";
 
+export const redisOptions: Readonly<RedisOptions> = {
+   host: env.REDIS_HOST,
+   port: env.REDIS_PORT,
+   password: env.REDIS_PASS
+};
+
 export const queueBaseOptions: Readonly<QueueBaseOptions> = {
-   connection: {
-      host: env.REDIS_HOST,
-      port: env.REDIS_PORT
-   }
+   connection: redisOptions
 }
 
 export const queue = new Queue<JobDataType, void, JobName>(name, queueBaseOptions);

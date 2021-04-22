@@ -25,6 +25,7 @@ export interface Environment extends NodeJS.Dict<any> {
    POSTGRES_DATABASE?: string;
    REDIS_HOST?: string;
    REDIS_PORT?: number;
+   REDIS_PASS?: string;
    HOTMAIL_USER?: string;
    HOTMAIL_PASS?: string;
    NB_TASK_WORKERS?: number;
