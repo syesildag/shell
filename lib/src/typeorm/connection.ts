@@ -2,7 +2,7 @@ import { Connection, ConnectionNotFoundError, createConnection, EntityTarget, ge
 
 import { isDevEnvironment } from '../utils/env';
 import logger from '../utils/logger';
-import { Utils } from '../utils/utils';
+import { isFunction } from '../utils/utils';
 import getConnectionOptions from './ormconfig';
 
 async function connect() {
@@ -31,7 +31,7 @@ async function connect() {
    if (connection) {
       let getRepository = connection.getRepository.bind(connection);
       connection.getRepository = <Entity>(target: EntityTarget<Entity>) => {
-         if (Utils.isFunction(target))
+         if (isFunction(target))
             return getRepository(target.name);
          return getRepository(target);
       }
