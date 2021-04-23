@@ -2,7 +2,19 @@ import '../styles/global.css';
 import 'reflect-metadata';
 
 import { AppProps } from 'next/app';
+import React from 'react';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+import logger from '../lib/src/utils/logger';
+
+export default class App extends React.Component<AppProps> {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    let { Component, pageProps, router } = this.props;
+    logger.debug("app parameters: " + JSON.stringify([Component, pageProps, router]));
+    return <Component {...pageProps} />;
+  }
 }
