@@ -1,20 +1,12 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import { ParsedUrlQuery } from 'node:querystring';
 import React from 'react';
 
 import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
-import { getSortedPostsData } from '../lib/src/posts';
+import { getSortedPostsData, PostData } from '../lib/src/posts';
 import utilStyles from '../styles/utils.module.css';
-
-export interface PostData extends ParsedUrlQuery {
-  date?: string;
-  title?: string;
-  id: string;
-  contentHtml?: string;
-}
 
 export interface HomeProps {
   allPostsData: Array<PostData>

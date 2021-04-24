@@ -1,10 +1,18 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import { ParsedUrlQuery } from 'node:querystring';
 import path from 'path';
 import remark from 'remark';
 import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'lib/src/posts/md');
+
+export interface PostData extends ParsedUrlQuery {
+  date?: string;
+  title?: string;
+  id: string;
+  contentHtml?: string;
+}
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -36,7 +44,7 @@ export function getSortedPostsData() {
   });
 }
 
-export function getAllPostIds() {
+export function getAllPostIds(): Array<{ params: PostData }> {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map(fileName => {
     return {

@@ -2,10 +2,9 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
-import { PostData } from '..';
 import Date from '../../components/date';
 import Layout from '../../components/layout';
-import { getAllPostIds, getPostData } from '../../lib/src/posts';
+import { getAllPostIds, getPostData, PostData } from '../../lib/src/posts';
 import utilStyles from '../../styles/utils.module.css';
 
 export interface PostProps {
