@@ -1,11 +1,10 @@
 import { JobsOptions } from 'bullmq';
 
 import { GenericFactory } from '../utils/genericFactory';
-import CronuJob from './jobs/cron/cronu';
-import HouruJob from './jobs/hour/houru';
+import XmlTvTask from './jobs/cron/xmlTvTask';
 import { JobProcessor } from './queue';
 
-export type JobDataType = 'houru' | 'cronu';
+export type JobDataType = 'xmlTv';
 
 export interface Info {
    constructor: GenericFactory.Constructor<JobDataType, JobProcessor>,
@@ -19,7 +18,6 @@ export const minutelyTasks: readonly Readonly<Info>[] = [
 ];
 
 export const hourlyTasks: readonly Readonly<Info>[] = [
-   { constructor: HouruJob }
 ];
 
 // @see https://github.com/harrisiirak/cron-parser
@@ -33,11 +31,11 @@ export const hourlyTasks: readonly Readonly<Info>[] = [
 //│    └──────────────────── minute(0 - 59)
 //└───────────────────────── second(0 - 59, optional)
 export const cronTasks: readonly Readonly<Info>[] = [{
-   constructor: CronuJob,
+   constructor: XmlTvTask,
    options: {
       repeat: {
-         // Repeat job once every day at 11:35:40 (am)
-         cron: '40 35 11 * * *'
+         // Repeat job once every day at 04:10:15 (am)
+         cron: '15 10 04 * * *'
       }
    }
 }];
