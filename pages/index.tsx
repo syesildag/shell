@@ -36,6 +36,14 @@ export default class Home extends React.Component<HomeProps> {
             </Link>
           </p>
         </section>
+        <section className={utilStyles.headingMd}>
+          <p>
+            Guide Télé {' '}
+            <Link href={`/xmltv`}>
+              <a>{"XmlTV"}</a>
+            </Link>
+          </p>
+        </section>
       </Layout>
     );
   }
